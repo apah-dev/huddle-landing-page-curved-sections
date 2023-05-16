@@ -342,7 +342,6 @@
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-
           width: 70%;
           max-width: 80%;
         }
@@ -371,15 +370,18 @@
         aside {
           display: flex;
           flex-direction: row-reverse;
-          gap: 30rem;
-        }
-
-        .input-box {
-          display: inline;
-          width: 60%;
+          gap: 50rem;
         }
         .submit-email {
           flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 2rem;
+          border: 2px solid salmon;
+        }
+
+        .input-box {
+          width: 60%;
         }
       }
     </style>
@@ -482,7 +484,7 @@
     <footer>
       <aside>
         <div class="subscribe">
-          <div>
+          <div class="newsletter">
             <h4>Newsletter</h4>
             <p>
               To recieve tips on how to grow your community, sign up to our
@@ -503,20 +505,20 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
           </p>
+
+          <div class="phone-email">
+            <div class="contact">
+              <img src="images/icon-phone.svg" alt="" />
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+
+            <div class="contact">
+              <img src="images/icon-email.svg" alt="" />
+              <p>example@huddle.com</p>
+            </div>
+          </div>
         </div>
       </aside>
-
-      <div class="phone-email">
-        <div class="contact">
-          <img src="images/icon-phone.svg" alt="" />
-          <p>Phone: +1-543-123-4567</p>
-        </div>
-
-        <div class="contact">
-          <img src="images/icon-email.svg" alt="" />
-          <p>example@huddle.com</p>
-        </div>
-      </div>
 
       <div class="footer-icons">
         <i class="fa-brands fa-facebook icon"></i>
