@@ -66,7 +66,7 @@
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         font-family: "Open Sans", sans-serif;
-        padding: 2rem;
+        /* padding: 2rem; */
       }
 
       /*
@@ -107,6 +107,7 @@
         align-items: center;
         max-height: 20px;
         margin-bottom: 5rem;
+        padding-top: 3rem;
       }
 
       .nav-logo {
@@ -145,14 +146,16 @@
 
       .get-started {
         background-color: var(--Pink);
-        font-size: 0.8em;
+        font-size: 0.6em;
         color: var(--VeryPaleBlue);
         font-weight: 600;
-        padding: 0.5rem 2rem;
+        padding: 0.8rem 1rem;
         border: none;
         border-radius: 1rem;
         margin-top: 2rem;
         box-shadow: 0.2rem 0.2rem 1rem rgb(166, 166, 166);
+        width: 100%;
+        max-width: 12rem;
       }
 
       /* mockup image and stats */
@@ -242,11 +245,6 @@
         margin-bottom: 10rem;
       }
 
-      .get-started {
-        width: 100%;
-        max-width: 12rem;
-      }
-
       .ready h3 {
         font-weight: 900;
         font-family: "Poppins", sans-serif;
@@ -254,6 +252,16 @@
       }
 
       /* footer */
+
+      footer {
+        color: var(--VeryPaleBlue);
+        background-color: var(--VeryDarkCyan);
+        padding: 0rem 4rem;
+      }
+
+      aside {
+        padding-top: 2rem;
+      }
 
       .subscribe {
         display: flex;
@@ -287,6 +295,16 @@
         font-size: 0.8rem;
       }
 
+      .footer-bg {
+        /* padding: 4rem; */
+        background-image: url(images/bg-footer-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        height: 100px;
+        /* margin-bottom: -30rem; */
+      }
+
       .footer-logo {
         width: 35%;
         max-width: 10rem;
@@ -304,6 +322,11 @@
         margin-bottom: 1rem;
       }
 
+      .contact-icon {
+        width: 3%;
+        max-width: 5rem;
+        height: 4%;
+      }
       .footer-icons {
         display: flex;
         gap: 1.5rem;
@@ -319,10 +342,28 @@
         color: hsl(228, 45%, 44%);
       }
 
-      @media (min-width: 58rem) {
-        body {
-          padding: 4rem;
+      @media (min-width: 46rem) {
+        .footer-bg {
+          /* padding: 4rem; */
+          background-image: url(images/bg-footer-top-desktop.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center bottom;
+          height: 200px;
+          /* margin-bottom: -30rem; */
         }
+
+        .first-section-bg {
+          background-image: url(images/bg-section-top-desktop-1.svg),
+            url(images/bg-section-bottom-desktop-1.svg);
+          background-repeat: no-repeat, no-repeat;
+          background-size: contain, contain;
+          background-position: center top, center bottom;
+        }
+        /* 
+        footer {
+          padding-top: 1rem;
+        } */
         .title-section {
           width: 100%;
         }
@@ -364,14 +405,23 @@
           width: 30%;
         }
 
+        .ready {
+          gap: 0rem;
+        }
+        .ready h3 {
+          font-size: 2em;
+        }
+
         aside {
           display: flex;
           flex-direction: row-reverse;
-          gap: 45rem;
+          gap: 40rem;
+          margin-top: 30rem;
+          padding-top: 6rem;
         }
         .submit-email {
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           gap: 2rem;
         }
@@ -428,6 +478,7 @@
       </section>
 
       <section class="second-section">
+        <div class="first-section-bg"></div>
         <div class="illustration">
           <img
             class="illustration-image"
@@ -483,6 +534,8 @@
       </aside>
     </main>
 
+    <div class="footer-bg"></div>
+
     <footer>
       <aside>
         <div class="subscribe">
@@ -510,12 +563,12 @@
 
           <div class="phone-email">
             <div class="contact">
-              <img src="images/icon-phone.svg" alt="" />
+              <img class="contact-icon" src="images/icon-phone.svg" alt="" />
               <p>Phone: +1-543-123-4567</p>
             </div>
 
             <div class="contact">
-              <img src="images/icon-email.svg" alt="" />
+              <img class="contact-icon" src="images/icon-email.svg" alt="" />
               <p>example@huddle.com</p>
             </div>
           </div>
